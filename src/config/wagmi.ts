@@ -8,7 +8,7 @@ import { createWagmiAdapter } from "@layerzerolabs/x-trader-joe-bridge";
 
 const { chains: wagmiChains, provider } = configureChains(
   // provide wagmi chain configuration
-  [avalanche, bsc, arbitrum],
+  [avalanche, bsc],
   [alchemyProvider({ apiKey: process.env.ALCHEMY_ID! }), publicProvider()]
 );
 
